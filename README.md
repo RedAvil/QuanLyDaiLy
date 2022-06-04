@@ -1,5 +1,5 @@
 
-[![]([http://imageshack.com/a/img924/2928/KHxn5v.jpg](https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/264124912_3058080664459393_235743153675945786_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=knphMjHwalsAX8yKdC_&_nc_ht=scontent.fsgn5-10.fna&oh=00_AT_AddQv-m716t5bl7GtJQbi5IddKJ0_fdFVsjr2dzhnSw&oe=62A0DA3C))]
+[![](http://imageshack.com/a/img924/2928/KHxn5v.jpg)
 
 
 # Quản Lý Đại Lý
