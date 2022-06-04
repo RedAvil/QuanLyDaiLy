@@ -16,8 +16,8 @@ CREATE TABLE ThongTinTaiKhoan(
 	UserName VARCHAR(50) PRIMARY KEY NOT NULL,
 	Pass VARCHAR(50) NOT NULL,
 	CMND VARCHAR(50) NOT NULL,
-	PhanQuyen INT DEFAULT 1 NOT NULL,--0 la  quyen Admin,1 la binh thuong
-	TrangThai INT DEFAULT 0 NOT NULL,--0 binh thuong,1 bi block
+	PhanQuyen INT DEFAULT 1 NOT NULL,--0 la quyen Admin, 1 la binh thuong
+	TrangThai INT DEFAULT 0 NOT NULL,--0 binh thuong, 1 bi block
 	FOREIGN KEY (CMND) REFERENCES NhanVienQL(CMND)
 )
 GO
@@ -220,24 +220,46 @@ go
 --------------------------
 ---------------CHEN DU LIEU------------
 
-INSERT INTO NhanVienQL (CMND,TenNV,NgaySinh,QueQuan,SDT) VALUES ('206014565',N'LÊ CÔNG KHÁNH','1997-10-18','QN','01664451119')
-INSERT INTO NhanVienQL (CMND,TenNV,NgaySinh,QueQuan,SDT) VALUES ('206022363',N'Nguyễn Tấn Vũ','1997-1-1',N'Bình Định','1345')
+INSERT INTO NhanVienQL (CMND,TenNV,NgaySinh,QueQuan,SDT) VALUES ('20000000',N'Admin','1999-10-10','TPHCM','01664451119')
+INSERT INTO NhanVienQL (CMND,TenNV,NgaySinh,QueQuan,SDT) VALUES ('20424100',N'Đỗ Tuấn Kiệt','1999-11-14','Đồng Nai','0347139303')
+INSERT INTO NhanVienQL (CMND,TenNV,NgaySinh,QueQuan,SDT) VALUES ('21424087',N'Nguyễn Đức Tài','1998-10-18','Bình Phước','01664451120')
+INSERT INTO NhanVienQL (CMND,TenNV,NgaySinh,QueQuan,SDT) VALUES ('21424040',N'Trần Thị Cẩm Nhung','1999-01-01',N'Bình Định','01664451121')
+INSERT INTO NhanVienQL (CMND,TenNV,NgaySinh,QueQuan,SDT) VALUES ('21424041',N'Nguyễn Văn An','1990-01-01',N'Bình Thuận','01674451121')
 
-INSERT INTO ThongTinTaiKhoan (UserName,Pass,CMND,PhanQuyen,TrangThai) VALUES ('LECONGKHANH','khanh181097','206014565',0,0)
-INSERT INTO ThongTinTaiKhoan (UserName,Pass,CMND,PhanQuyen,TrangThai) VALUES ('VUBD','1234','206022363',0,0)
+INSERT INTO ThongTinTaiKhoan (UserName,Pass,CMND,PhanQuyen,TrangThai) VALUES ('Admin','123456','20000000', 1, 0)
+INSERT INTO ThongTinTaiKhoan (UserName,Pass,CMND,PhanQuyen,TrangThai) VALUES ('KietDT','123456','20424100', 0, 0)
+INSERT INTO ThongTinTaiKhoan (UserName,Pass,CMND,PhanQuyen,TrangThai) VALUES ('TaiND16','123456','21424087', 0, 0)
+INSERT INTO ThongTinTaiKhoan (UserName,Pass,CMND,PhanQuyen,TrangThai) VALUES ('NhungTTC','123456','21424040', 0, 0)
+INSERT INTO ThongTinTaiKhoan (UserName,Pass,CMND,PhanQuyen,TrangThai) VALUES ('AnNV','123456','21424041', 0, 1)
 
 insert into Quan (TenQuan) values (N'Quận 1')
 insert into Quan (TenQuan) values (N'Quận 2')
 insert into Quan (TenQuan) values (N'Quận 3')
 insert into Quan (TenQuan) values (N'Quận 4')
+insert into Quan (TenQuan) values (N'Quận 5')
+insert into Quan (TenQuan) values (N'Quận 6')
+insert into Quan (TenQuan) values (N'Quận 7')
+insert into Quan (TenQuan) values (N'Quận 8')
+insert into Quan (TenQuan) values (N'Quận 9')
+insert into Quan (TenQuan) values (N'Quận 10')
+insert into Quan (TenQuan) values (N'Quận 11')
+insert into Quan (TenQuan) values (N'Quận 12')
+insert into Quan (TenQuan) values (N'Bình Tân')
+insert into Quan (TenQuan) values (N'Bình Thạnh')
+insert into Quan (TenQuan) values (N'Gò Vấp')
+insert into Quan (TenQuan) values (N'Phú Nhuận')
+insert into Quan (TenQuan) values (N'Tân Bình')
+insert into Quan (TenQuan) values (N'Tân Phú')
+insert into Quan (TenQuan) values (N'Thủ Đức')
+insert into Quan (TenQuan) values (N'Bình Chánh')
 
 insert into LoaiDaiLy(TenLoaiDL) values (N'Loại 1')
 insert into LoaiDaiLy(TenLoaiDL) values (N'Loại 2')
 
-insert into DaiLy (TenDaiLy,SDT,DiaChi,IdQuan,NgayTiepNhan,IdLoaiDL,CMND) values (N'Đại Lý A','09891234',N'abc,Quận 1,HCM',1,'2018-1-2',1,'206014565')
-insert into DaiLy (TenDaiLy,SDT,DiaChi,IdQuan,NgayTiepNhan,IdLoaiDL,CMND) values (N'Đại Lý B','01215677',N'xyz,Quận 2,HCM',2,'2018-6-2',1,'206022363')
-insert into DaiLy (TenDaiLy,SDT,DiaChi,IdQuan,NgayTiepNhan,IdLoaiDL,CMND) values (N'Đại Lý C','09777888',N'kkk,Quận 3,HCM',3,'2018-6-8',2,'206014565')
-insert into DaiLy (TenDaiLy,SDT,DiaChi,IdQuan,NgayTiepNhan,IdLoaiDL,CMND) values (N'Đại Lý D','06789000',N'lck,Quận 4,HCM',4,'2018-1-8',2,'206014565')
+insert into DaiLy (TenDaiLy,SDT,DiaChi,IdQuan,NgayTiepNhan,IdLoaiDL,CMND) values (N'Đại Lý A', '09891234',N'171 Cống Quỳnh,  Nguyễn Cư Trinh', 1, '2018-1-2', 1 ,'20424100')
+insert into DaiLy (TenDaiLy,SDT,DiaChi,IdQuan,NgayTiepNhan,IdLoaiDL,CMND) values (N'Đại Lý B', '01215677',N'259 Lê Văn Thịnh, phường Cát Lái', 2,'2018-6-2', 1 ,'21424087')
+insert into DaiLy (TenDaiLy,SDT,DiaChi,IdQuan,NgayTiepNhan,IdLoaiDL,CMND) values (N'Đại Lý C', '09777888',N'252 Điện Biên Phủ, Phường 7', 3, '2018-6-8', 2, '21424041')
+insert into DaiLy (TenDaiLy,SDT,DiaChi,IdQuan,NgayTiepNhan,IdLoaiDL,CMND) values (N'Đại Lý D', '06789000',N'68 Trần Kế Xương, Phường 3', 14, '2018-1-8', 2, '21424040')
 
 insert into MatHang(TenMatHang) values (N'Vở 96 trang')
 insert into MatHang(TenMatHang) values (N'Bút Chì')
@@ -246,9 +268,9 @@ insert into MatHang(TenMatHang) values (N'Phấn Màu')
 insert into MatHang(TenMatHang) values (N'Bút Bi')
 
 
-insert into PhieuXuatHang(NgayXuat,IdDaiLy,CMND) values ('2018-7-7',1,'206014565')
-insert into PhieuXuatHang(NgayXuat,IdDaiLy,CMND) values ('2018-7-22',2,'206022363')
-insert into PhieuXuatHang(NgayXuat,IdDaiLy,CMND) values ('2018-8-8',3,'206014565')
+insert into PhieuXuatHang(NgayXuat,IdDaiLy,CMND) values ('2021-7-7',1,'20424100')
+insert into PhieuXuatHang(NgayXuat,IdDaiLy,CMND) values ('2021-7-22',2,'21424087')
+insert into PhieuXuatHang(NgayXuat,IdDaiLy,CMND) values ('2021-8-8',3,'20424100')
 
 insert into ChiTietXuatHang(IdPhieuXuat,IdMatHang,SoLuong,DonGia,DonViTinh,ThanhTien) values (1,1,20,3000,N'Quyển',60000)
 insert into ChiTietXuatHang(IdPhieuXuat,IdMatHang,SoLuong,DonGia,DonViTinh,ThanhTien) values (2,2,20,2000,N'Cây',40000)
@@ -257,11 +279,11 @@ insert into ChiTietXuatHang(IdPhieuXuat,IdMatHang,SoLuong,DonGia,DonViTinh,Thanh
 
 
 
-insert into PhieuThuTien(NgayThu,SoTienThu,IdDaiLy,CMND) values ('2018-7-7',60000,1,'206014565')
-insert into PhieuThuTien(NgayThu,SoTienThu,IdDaiLy,CMND) values ('2018-7-22',240000,2,'206014565')
-insert into PhieuThuTien(NgayThu,SoTienThu,IdDaiLy,CMND) values ('2018-8-8',50000,3,'206022363')
-insert into PhieuThuTien (NgayThu,SoTienThu,IdDaiLy,CMND) values ('2018-08-19',30000,3,'206014565')
-insert into PhieuThuTien (NgayThu,SoTienThu,IdDaiLy,CMND) values ('2018-08-10',20000,4,'206014565')
+insert into PhieuThuTien(NgayThu,SoTienThu,IdDaiLy,CMND) values ('2018-7-7',60000,1,'20424100')
+insert into PhieuThuTien(NgayThu,SoTienThu,IdDaiLy,CMND) values ('2018-7-22',240000,2,'21424087')
+insert into PhieuThuTien(NgayThu,SoTienThu,IdDaiLy,CMND) values ('2018-8-8',50000,3,'21424040')
+insert into PhieuThuTien (NgayThu,SoTienThu,IdDaiLy,CMND) values ('2018-08-19',30000,3,'20424100')
+insert into PhieuThuTien (NgayThu,SoTienThu,IdDaiLy,CMND) values ('2018-08-10',20000,4,'21424041')
 
 insert into CongNo(IdDaiLy,Thang,NoDau,NoCuoi,PhatSinh) values (1,7,0,0,0)
 insert into CongNo(IdDaiLy,Thang,NoDau,NoCuoi,PhatSinh) values (2,7,0,0,0)
@@ -285,7 +307,8 @@ insert QuyCheToChuc values (2,4,5,20)
 
 -------------------------------------------------------------------------------------------------
 --LOGIN AND REGISTER USER
-create PROCEDURE PR_CheckLogin --0 cho phep dang nhap ,1 SAI USER,2 SAI PASS,3 BI BLOCK
+Go
+CREATE PROCEDURE PR_CheckLogin --0 cho phep dang nhap ,1 SAI USER,2 SAI PASS,3 BI BLOCK
 @UserName VARCHAR(50),
 @Pass VARCHAR(50),
 @out int out
@@ -322,7 +345,7 @@ BEGIN
 	END
 END
 GO
-create proc PR_DangKi  ---- 0 dangki thanh cong, 1 trung user,2 nhan vien da co tai khoan,3 loi 
+CREATE PROC PR_DangKi  ---- 0 dangki thanh cong, 1 trung user,2 nhan vien da co tai khoan,3 loi 
 @CMND varchar(50),
 @TenNV nvarchar(50),
 @NgaySinh date,
@@ -368,7 +391,8 @@ end
 --EXEC PR_DangKi '123',N'haha','1998-10-10','hcm','123','LECONGKHANH','khanh123',0,0,@rs out
 --print @rs
 --go
-create proc PR_UpdatePass
+GO
+CREATE PROC PR_UpdatePass
 @passCu varchar(50),@passMoi varchar(50),@userName varchar(50),@out int out
 as
 begin
@@ -384,12 +408,11 @@ begin
 		set @out=2
 	end
 end
-go
-
 
 ------------------------------------------------------------------------------------
 --LOẠI ĐẠI LÝ
-create proc PR_InsertLoaiDaiLy
+Go
+CREATE PROC PR_InsertLoaiDaiLy
 @TenLoaiDL nvarchar(50),
 @out int out 
 as
@@ -418,10 +441,10 @@ begin
 		set @out=3
 	end
 end
-go
 -----------------------------------------------------------------
 --Thêm nhân viên
-create proc PR_ThemNhanVien
+Go
+CREATE PROC PR_ThemNhanVien
 @CMND VARCHAR(50),@TenNV NVARCHAR(50),@NgaySinh DATE,@QueQuan NVARCHAR(100),@SDT VARCHAR(50),@out int out
 as
 begin
@@ -439,7 +462,8 @@ begin
 end
 ------------------------------------------------------------------------------------
 --TIẾP NHẬN ĐẠI LÝ 
-create PROC PR_InsertDl --0 thêm thành công ,1 tên đại lý tồn tại,2 lỗi thêm
+GO
+CREATE PROC PR_InsertDl --0 thêm thành công ,1 tên đại lý tồn tại,2 lỗi thêm
 @TenDL nvarchar(50),@SDT varchar(50),@DiaChi nvarchar(50),@IdQuan int,@NgayTiepNhan date,
 @IdLoaiDL int,@CMND varchar(50),@out int out
 as
@@ -469,7 +493,7 @@ begin
 	end
 end
 go
-create PROC PR_UpdateDL
+CREATE PROC PR_UpdateDL
 @IdDaiLy int,@TenDaiLy nvarchar(50),@SDT varchar(50),@DiaChi nvarchar(100),@IdQuan int,
 @NgayTiepNhan date,@IdLoaiDL int,@CMND varchar(50),@TienNo float,@out int out
 as
@@ -502,7 +526,7 @@ begin
 end
 go
 
-create proc PR_UpdateTienNo
+CREATE PROC PR_UpdateTienNo
 @idDL int,@tienNo int,@out int out
 as 
 begin
@@ -529,7 +553,7 @@ go
 --select TienNo from DaiLy where IdDaiLy=1
 --------------------------------------------------------------------------------------
 --MẶT HÀNG
-create proc PR_InsertMatHang
+CREATE PROC PR_InsertMatHang
 @TenMatHang nvarchar(50),
 @Out int Out
 as
@@ -561,7 +585,7 @@ go
 
 ------------------------------------------------------
 -----Quận
-create proc PR_InsertQuan
+CREATE PROC PR_InsertQuan
 @TenQuan nvarchar(50) ,
 @out int out
 as
@@ -593,7 +617,7 @@ go
 ---------------------------------------------
 
 ----Phiếu xuất
-create proc PR_InsertPhieuXuat
+CREATE PROC PR_InsertPhieuXuat
 @NgayXuat DATE,@IdDaiLy INT,@CMND VARCHAR(50),
 @out int out
 as
@@ -636,7 +660,7 @@ begin
 end
 go
 --báo cáo
-create proc PR_BaoCaoDoanhSo
+CREATE PROC PR_BaoCaoDoanhSo
 @Thang int
 as
 begin
@@ -676,7 +700,7 @@ begin
 end
 go
 
-create proc PR_BaoCaoCongNo
+CREATE PROC PR_BaoCaoCongNo
 @Thang int
 as
 begin
@@ -685,7 +709,3 @@ begin
 	where P.IdDaiLy=D.IdDaiLy and MONTH(P.NgayThu)=@Thang
 	group by P.IdDaiLy
 end
-go
-
-
-select * from ThongTinTaiKhoan
