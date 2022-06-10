@@ -33,10 +33,15 @@ namespace QuanLyDaiLy
 
         private void btnDangKi_Click(object sender, EventArgs e)
         {
-            DangKyTaiKhoancs mk = new DangKyTaiKhoancs(taiKhoan,nhanVien);
-            pnlAmin.Controls.Clear();
-            pnlAmin.Controls.Add(mk);
-            mk.Show();
+            if(1 == taiKhoan.PhanQuyen)
+            {
+                DangKyTaiKhoancs mk = new DangKyTaiKhoancs(taiKhoan, nhanVien);
+                pnlAmin.Controls.Clear();
+                pnlAmin.Controls.Add(mk);
+                mk.Show();
+            } else {
+                MessageBox.Show("Chỉ admin mới được tạo tài khoản mới");
+            }                       
         }
 
         private void btnDoiPass_Click(object sender, EventArgs e)

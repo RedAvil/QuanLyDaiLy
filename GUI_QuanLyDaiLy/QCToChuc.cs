@@ -21,7 +21,7 @@ namespace QuanLyDaiLy
             Load();
         }
 
-        private void Load()
+        private new void Load()
         {
             txtSoLoaiDL.Text = qctc.SoLoaiDaiLy.ToString();
             txtSoDLToiDa.Text = qctc.SoDaiLyToiDa.ToString();

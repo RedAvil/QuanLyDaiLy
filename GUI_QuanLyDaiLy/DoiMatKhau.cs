@@ -38,17 +38,17 @@ namespace QuanLyDaiLy
                     int kq = BUS_QuanLyTaiKhoan.CapNhatMatKhau(taiKhoan.UserName, passCu, passMoi);
                     if (kq == 1)
                     {
-                        //thanfh cong
+                        //success
                         MessageBox.Show("Thay đổi thành công");
-                    }else
+                        txtPassCu.Text = "";
+                        txtPassMoi.Text = "";
+                        txtPassNhapLai.Text = "";
+                    }
+                    else
                     {
-                        //khongthanhcong
+                        //fail
                         MessageBox.Show("Thay đổi thất bại");
                     }
-                }
-                else
-                {
-                    //passCU vaf pass cu nhap lai ko trung
                 }
             }
         }
@@ -57,7 +57,13 @@ namespace QuanLyDaiLy
         {
             if (cbHienThi.Checked == true)
             {
-               
+                txtPassMoi.UseSystemPasswordChar = false;
+                txtPassNhapLai.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtPassMoi.UseSystemPasswordChar = true;
+                txtPassNhapLai.UseSystemPasswordChar = true;
             }
         }
     }

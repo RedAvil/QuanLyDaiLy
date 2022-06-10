@@ -18,7 +18,6 @@ namespace QuanLyDaiLy
     {
         private ArrayList doanhSo;
         private DataTable tb=new DataTable();
-        int id = -1;
         public BaoCaoDoanhSo()
         {
             InitializeComponent();
@@ -30,7 +29,7 @@ namespace QuanLyDaiLy
             Load();
         }
 
-        private void Load()
+        private new void Load()
         {
             //doanhSo= BUS_BaoCaoDoanhSo.GetDoanhSo(1);
 

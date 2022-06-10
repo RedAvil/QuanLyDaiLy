@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlAmin = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btnDoiPass = new DevExpress.XtraEditors.SimpleButton();
             this.btnDangKi = new DevExpress.XtraEditors.SimpleButton();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pnlAmin = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -48,6 +48,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(929, 558);
             this.panel1.TabIndex = 1;
+            // 
+            // pnlAmin
+            // 
+            this.pnlAmin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlAmin.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pnlAmin.Location = new System.Drawing.Point(210, 4);
+            this.pnlAmin.Name = "pnlAmin";
+            this.pnlAmin.Size = new System.Drawing.Size(716, 551);
+            this.pnlAmin.TabIndex = 3;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnDoiPass);
+            this.panel2.Controls.Add(this.btnDangKi);
+            this.panel2.Location = new System.Drawing.Point(4, 4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 551);
+            this.panel2.TabIndex = 2;
             // 
             // btnDoiPass
             // 
@@ -78,26 +98,6 @@
             this.btnDangKi.TabIndex = 0;
             this.btnDangKi.Text = "Đăng kí tài khoản";
             this.btnDangKi.Click += new System.EventHandler(this.btnDangKi_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btnDoiPass);
-            this.panel2.Controls.Add(this.btnDangKi);
-            this.panel2.Location = new System.Drawing.Point(4, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 551);
-            this.panel2.TabIndex = 2;
-            // 
-            // pnlAmin
-            // 
-            this.pnlAmin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlAmin.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.pnlAmin.Location = new System.Drawing.Point(210, 4);
-            this.pnlAmin.Name = "pnlAmin";
-            this.pnlAmin.Size = new System.Drawing.Size(716, 551);
-            this.pnlAmin.TabIndex = 3;
             // 
             // Admin
             // 

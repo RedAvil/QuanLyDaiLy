@@ -36,7 +36,7 @@ namespace QuanLyDaiLy
             Load();
         }
 
-        private void Load()
+        private new void Load()
         {
             tongTien = 0;
             //tb = new DataTable();
@@ -124,7 +124,6 @@ namespace QuanLyDaiLy
             {
                 int idDaiLy = dsIdDL[cbDaiLy.SelectedIndex];
                 DateTime ngayXuat = dtNgayLap.Value;
-                //Console.WriteLine(ngayXuat.ToString("yyyy-MM-dd"));
                 float tienCon = (float)Convert.ToDouble(txtTienCon.Text);
                 float tienNo = BUS_DaiLy.GetTienNo(idDaiLy);
                 Console.WriteLine(tienNo);

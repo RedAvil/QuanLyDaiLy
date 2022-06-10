@@ -62,10 +62,8 @@ namespace QuanLyDaiLy
             tb.Columns.Add("Địa chỉ", typeof(string));
             Load();
         }
-        private void Load()
+        private new void Load()
         {
-           
-           
             idDL = -1;
             idLoaiDL = -1;
             idQuan = -1;
@@ -148,7 +146,7 @@ namespace QuanLyDaiLy
                 dsDaiLy= BUS_DaiLy.DsDaiLy();
                 UpdateGvDaiLy();
             }
-            
+            btnReMove_Click(null, null);
         }
 
         private void btnModify_Click(object sender, EventArgs e)

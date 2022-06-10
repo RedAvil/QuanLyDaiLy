@@ -20,7 +20,6 @@ namespace QuanLyDaiLy
         private DTO_NhanVienQuanLy nhanVien;
         private DataTable tb;
         private ArrayList dsDaiLy;
-        private ArrayList dsPhieuThu;
         private int[] dsIdDL;
         public PhieuThu()
         {
@@ -34,7 +33,7 @@ namespace QuanLyDaiLy
             Load();
         }
 
-        private void Load()
+        private new void Load()
         {
             tb = new DataTable();
             dsDaiLy = BUS_DaiLy.DsDaiLy();

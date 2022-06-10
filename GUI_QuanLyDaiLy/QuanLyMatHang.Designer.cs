@@ -67,7 +67,7 @@
             this.panelControl1.ContentImage = ((System.Drawing.Image)(resources.GetObject("panelControl1.ContentImage")));
             this.panelControl1.ContentImageAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.panelControl1.Controls.Add(this.txtTim);
-            this.panelControl1.Location = new System.Drawing.Point(582, 88);
+            this.panelControl1.Location = new System.Drawing.Point(440, 74);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(184, 42);
             this.panelControl1.TabIndex = 7;
@@ -91,10 +91,12 @@
             this.btnSua.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnSua.Appearance.Options.UseFont = true;
             this.btnSua.Appearance.Options.UseForeColor = true;
+            this.btnSua.AutoSize = true;
+            this.btnSua.AutoWidthInLayoutControl = true;
             this.btnSua.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.ImageOptions.Image")));
-            this.btnSua.Location = new System.Drawing.Point(464, 456);
+            this.btnSua.Location = new System.Drawing.Point(300, 80);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(105, 49);
+            this.btnSua.Size = new System.Drawing.Size(99, 36);
             this.btnSua.TabIndex = 5;
             this.btnSua.Text = "Sửa";
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
@@ -108,10 +110,12 @@
             this.btnXoa.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnXoa.Appearance.Options.UseFont = true;
             this.btnXoa.Appearance.Options.UseForeColor = true;
+            this.btnXoa.AutoSize = true;
+            this.btnXoa.AutoWidthInLayoutControl = true;
             this.btnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.ImageOptions.Image")));
-            this.btnXoa.Location = new System.Drawing.Point(334, 456);
+            this.btnXoa.Location = new System.Drawing.Point(170, 80);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(100, 49);
+            this.btnXoa.Size = new System.Drawing.Size(99, 36);
             this.btnXoa.TabIndex = 4;
             this.btnXoa.Text = "Xoá";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
@@ -125,10 +129,12 @@
             this.btnThem.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnThem.Appearance.Options.UseFont = true;
             this.btnThem.Appearance.Options.UseForeColor = true;
+            this.btnThem.AutoSize = true;
+            this.btnThem.AutoWidthInLayoutControl = true;
             this.btnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.ImageOptions.Image")));
-            this.btnThem.Location = new System.Drawing.Point(204, 456);
+            this.btnThem.Location = new System.Drawing.Point(40, 80);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(101, 49);
+            this.btnThem.Size = new System.Drawing.Size(99, 36);
             this.btnThem.TabIndex = 3;
             this.btnThem.Text = "Thêm ";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
@@ -141,9 +147,9 @@
             this.gvMatHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gvMatHang.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.gvMatHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvMatHang.Location = new System.Drawing.Point(33, 136);
+            this.gvMatHang.Location = new System.Drawing.Point(15, 154);
             this.gvMatHang.Name = "gvMatHang";
-            this.gvMatHang.Size = new System.Drawing.Size(733, 292);
+            this.gvMatHang.Size = new System.Drawing.Size(733, 364);
             this.gvMatHang.TabIndex = 2;
             this.gvMatHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvMatHang_CellClick);
             this.gvMatHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvMatHang_CellContentClick);
@@ -154,7 +160,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTen.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.txtTen.Location = new System.Drawing.Point(190, 58);
+            this.txtTen.Location = new System.Drawing.Point(170, 17);
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(190, 32);
             this.txtTen.TabIndex = 1;
@@ -167,7 +173,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 15F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(29, 55);
+            this.label1.Location = new System.Drawing.Point(29, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(135, 24);
             this.label1.TabIndex = 0;

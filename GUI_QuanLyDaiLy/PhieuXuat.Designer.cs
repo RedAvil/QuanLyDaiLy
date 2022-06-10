@@ -197,7 +197,7 @@
             this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel9.Controls.Add(this.label2);
             this.panel9.Controls.Add(this.dtNgayLap);
-            this.panel9.Location = new System.Drawing.Point(428, 2);
+            this.panel9.Location = new System.Drawing.Point(389, 2);
             this.panel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(382, 40);
@@ -217,11 +217,11 @@
             // 
             // dtNgayLap
             // 
-            this.dtNgayLap.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.dtNgayLap.Location = new System.Drawing.Point(189, 6);
+            this.dtNgayLap.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtNgayLap.Location = new System.Drawing.Point(171, 11);
             this.dtNgayLap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtNgayLap.Name = "dtNgayLap";
-            this.dtNgayLap.Size = new System.Drawing.Size(187, 22);
+            this.dtNgayLap.Size = new System.Drawing.Size(187, 21);
             this.dtNgayLap.TabIndex = 7;
             // 
             // panel2

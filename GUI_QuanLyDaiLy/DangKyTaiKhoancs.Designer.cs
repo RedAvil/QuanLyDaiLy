@@ -38,12 +38,9 @@
             this.txtHoten = new System.Windows.Forms.TextBox();
             this.txtQue = new System.Windows.Forms.TextBox();
             this.txtSdt = new System.Windows.Forms.TextBox();
-            this.txtQuyen = new System.Windows.Forms.TextBox();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.btnReset = new DevExpress.XtraEditors.SimpleButton();
             this.btnThem = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
@@ -65,12 +62,9 @@
             this.panelControl1.Controls.Add(this.txtHoten);
             this.panelControl1.Controls.Add(this.txtQue);
             this.panelControl1.Controls.Add(this.txtSdt);
-            this.panelControl1.Controls.Add(this.txtQuyen);
             this.panelControl1.Controls.Add(this.txtUser);
             this.panelControl1.Controls.Add(this.btnReset);
             this.panelControl1.Controls.Add(this.btnThem);
-            this.panelControl1.Controls.Add(this.labelControl11);
-            this.panelControl1.Controls.Add(this.labelControl8);
             this.panelControl1.Controls.Add(this.labelControl7);
             this.panelControl1.Controls.Add(this.labelControl6);
             this.panelControl1.Controls.Add(this.labelControl5);
@@ -149,14 +143,6 @@
             this.txtSdt.Size = new System.Drawing.Size(221, 32);
             this.txtSdt.TabIndex = 17;
             // 
-            // txtQuyen
-            // 
-            this.txtQuyen.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.txtQuyen.Location = new System.Drawing.Point(273, 363);
-            this.txtQuyen.Name = "txtQuyen";
-            this.txtQuyen.Size = new System.Drawing.Size(221, 32);
-            this.txtQuyen.TabIndex = 16;
-            // 
             // txtUser
             // 
             this.txtUser.Font = new System.Drawing.Font("Tahoma", 15F);
@@ -170,7 +156,7 @@
             this.btnReset.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
             this.btnReset.Appearance.Options.UseFont = true;
             this.btnReset.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.ImageOptions.Image")));
-            this.btnReset.Location = new System.Drawing.Point(408, 423);
+            this.btnReset.Location = new System.Drawing.Point(385, 373);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(109, 43);
             this.btnReset.TabIndex = 12;
@@ -182,32 +168,12 @@
             this.btnThem.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
             this.btnThem.Appearance.Options.UseFont = true;
             this.btnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.ImageOptions.Image")));
-            this.btnThem.Location = new System.Drawing.Point(241, 423);
+            this.btnThem.Location = new System.Drawing.Point(218, 373);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(115, 43);
             this.btnThem.TabIndex = 11;
             this.btnThem.Text = "Thêm";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // labelControl11
-            // 
-            this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Location = new System.Drawing.Point(56, 363);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(63, 24);
-            this.labelControl11.TabIndex = 10;
-            this.labelControl11.Text = "Quyền ";
-            // 
-            // labelControl8
-            // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(520, 370);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(186, 17);
-            this.labelControl8.TabIndex = 7;
-            this.labelControl8.Text = "( 1 tài khoản thường,2 Admin)";
             // 
             // labelControl7
             // 
@@ -304,12 +270,9 @@
         private System.Windows.Forms.TextBox txtHoten;
         private System.Windows.Forms.TextBox txtQue;
         private System.Windows.Forms.TextBox txtSdt;
-        private System.Windows.Forms.TextBox txtQuyen;
         private System.Windows.Forms.TextBox txtUser;
         private DevExpress.XtraEditors.SimpleButton btnReset;
         private DevExpress.XtraEditors.SimpleButton btnThem;
-        private DevExpress.XtraEditors.LabelControl labelControl11;
-        private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl5;

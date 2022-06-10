@@ -77,7 +77,7 @@
             this.txtuserName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtuserName.EditValue = "LECONGKHANH";
+            this.txtuserName.EditValue = "KietDT";
             this.txtuserName.Location = new System.Drawing.Point(325, 184);
             this.txtuserName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtuserName.Name = "txtuserName";
@@ -108,7 +108,7 @@
             this.labelControl1.Appearance.Options.UseForeColor = true;
             this.labelControl1.Location = new System.Drawing.Point(173, 114);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(338, 40);
+            this.labelControl1.Size = new System.Drawing.Size(334, 40);
             this.labelControl1.TabIndex = 7;
             this.labelControl1.Text = "Phần mềm quản lý đại lý";
             // 
@@ -142,7 +142,7 @@
             this.txtPassWord.Name = "txtPassWord";
             this.txtPassWord.Size = new System.Drawing.Size(240, 30);
             this.txtPassWord.TabIndex = 5;
-            this.txtPassWord.Text = "khanh181097";
+            this.txtPassWord.Text = "123456";
             this.txtPassWord.UseSystemPasswordChar = true;
             // 
             // Login

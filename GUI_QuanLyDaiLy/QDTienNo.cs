@@ -27,7 +27,7 @@ namespace QuanLyDaiLy
             tb.Columns.Add(new DataColumn("Tiền nợ", typeof(float)));
             Load();
         }
-        private void Load()
+        private new void Load()
         {
             dsQuyDinh = BUS_QuyDinhTienNo.GetQuyDinhTienNo();
             cbLoaiDL.Items.Clear();

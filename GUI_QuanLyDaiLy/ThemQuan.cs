@@ -34,7 +34,7 @@ namespace QuanLyDaiLy
             Load();
         }
 
-        private void Load()
+        private new void Load()
         {
             tb = new DataTable();
             tb.Columns.Add("id", typeof(int));
@@ -82,10 +82,7 @@ namespace QuanLyDaiLy
                 {
                     MessageBox.Show("Thêm thất bại");
                 }
-         //       1:thành công
-         //*2:số lượng quận vượt quy định
-         //*3:tên quận đã tồn tại
-
+                txtQuan.Text = "";
             }
         }
 
@@ -104,8 +101,8 @@ namespace QuanLyDaiLy
                 {
                     MessageBox.Show("Xoá thất bại");
                 }
-            }
-            
+                txtQuan.Text = "";
+            }          
         }
 
         private void gvQuan_CellClick(object sender, DataGridViewCellEventArgs e)

@@ -28,7 +28,7 @@ namespace QuanLyDaiLy
             Load();
         }
 
-        private void Load()
+        private new void Load()
         {
             dsQuyDinh = BUS_QuyDinhMatHang.GetQuyDinhMatHang();
             cbMatHang.Items.Clear();

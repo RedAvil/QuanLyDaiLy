@@ -46,7 +46,7 @@ namespace QuanLyDaiLy
 
             }
         }
-        private void Load()
+        private new void Load()
         {
             int[] dsThang = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
             cbCN.DataSource = dsThang;

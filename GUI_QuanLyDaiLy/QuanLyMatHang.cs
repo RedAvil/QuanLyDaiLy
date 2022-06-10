@@ -32,7 +32,7 @@ namespace QuanLyDaiLy
             Load();
         }
 
-        private void Load()
+        private new void Load()
         {
             dsMatHang = BUS_MatHang.DsMatHang();
             tb = new DataTable();

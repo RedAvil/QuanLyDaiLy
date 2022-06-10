@@ -16,8 +16,8 @@ CREATE TABLE ThongTinTaiKhoan(
 	UserName VARCHAR(50) PRIMARY KEY NOT NULL,
 	Pass VARCHAR(50) NOT NULL,
 	CMND VARCHAR(50) NOT NULL,
-	PhanQuyen INT DEFAULT 1 NOT NULL,--0 la quyen Admin, 1 la binh thuong
-	TrangThai INT DEFAULT 0 NOT NULL,--0 binh thuong, 1 bi block
+	PhanQuyen INT DEFAULT 1 NOT NULL,--0 Admin, 1 Default
+	TrangThai INT DEFAULT 0 NOT NULL,--0 Default, 1 Block
 	FOREIGN KEY (CMND) REFERENCES NhanVienQL(CMND)
 )
 GO
@@ -256,10 +256,8 @@ insert into Quan (TenQuan) values (N'Bình Chánh')
 insert into LoaiDaiLy(TenLoaiDL) values (N'Loại 1')
 insert into LoaiDaiLy(TenLoaiDL) values (N'Loại 2')
 
-insert into DaiLy (TenDaiLy,SDT,DiaChi,IdQuan,NgayTiepNhan,IdLoaiDL,CMND) values (N'Đại Lý A', '09891234',N'171 Cống Quỳnh,  Nguyễn Cư Trinh', 1, '2018-1-2', 1 ,'20424100')
-insert into DaiLy (TenDaiLy,SDT,DiaChi,IdQuan,NgayTiepNhan,IdLoaiDL,CMND) values (N'Đại Lý B', '01215677',N'259 Lê Văn Thịnh, phường Cát Lái', 2,'2018-6-2', 1 ,'21424087')
-insert into DaiLy (TenDaiLy,SDT,DiaChi,IdQuan,NgayTiepNhan,IdLoaiDL,CMND) values (N'Đại Lý C', '09777888',N'252 Điện Biên Phủ, Phường 7', 3, '2018-6-8', 2, '21424041')
-insert into DaiLy (TenDaiLy,SDT,DiaChi,IdQuan,NgayTiepNhan,IdLoaiDL,CMND) values (N'Đại Lý D', '06789000',N'68 Trần Kế Xương, Phường 3', 14, '2018-1-8', 2, '21424040')
+insert into DaiLy (TenDaiLy,SDT,DiaChi,IdQuan,NgayTiepNhan,IdLoaiDL,CMND) values (N'Đại Lý A', '09891234',N'171 Cống Quỳnh,  Nguyễn Cư Trinh', 1, '2022-01-02', 1 ,'20424100')
+insert into DaiLy (TenDaiLy,SDT,DiaChi,IdQuan,NgayTiepNhan,IdLoaiDL,CMND) values (N'Đại Lý B', '01215677',N'259 Lê Văn Thịnh, phường Cát Lái', 2,'2022-06-02', 1 ,'21424087')
 
 insert into MatHang(TenMatHang) values (N'Vở 96 trang')
 insert into MatHang(TenMatHang) values (N'Bút Chì')
@@ -267,34 +265,24 @@ insert into MatHang(TenMatHang) values (N'Sách Giáo Khoa')
 insert into MatHang(TenMatHang) values (N'Phấn Màu')
 insert into MatHang(TenMatHang) values (N'Bút Bi')
 
-
-insert into PhieuXuatHang(NgayXuat,IdDaiLy,CMND) values ('2021-7-7',1,'20424100')
-insert into PhieuXuatHang(NgayXuat,IdDaiLy,CMND) values ('2021-7-22',2,'21424087')
-insert into PhieuXuatHang(NgayXuat,IdDaiLy,CMND) values ('2021-8-8',3,'20424100')
+insert into PhieuXuatHang(NgayXuat,IdDaiLy,CMND) values ('2022-06-01',1,'20424100')
+insert into PhieuXuatHang(NgayXuat,IdDaiLy,CMND) values ('2022-05-22',2,'21424087')
 
 insert into ChiTietXuatHang(IdPhieuXuat,IdMatHang,SoLuong,DonGia,DonViTinh,ThanhTien) values (1,1,20,3000,N'Quyển',60000)
 insert into ChiTietXuatHang(IdPhieuXuat,IdMatHang,SoLuong,DonGia,DonViTinh,ThanhTien) values (2,2,20,2000,N'Cây',40000)
-insert into ChiTietXuatHang(IdPhieuXuat,IdMatHang,SoLuong,DonGia,DonViTinh,ThanhTien) values (3,4,10,5000,N'Hộp',50000)
 insert into ChiTietXuatHang(IdPhieuXuat,IdMatHang,SoLuong,DonGia,DonViTinh,ThanhTien) values (2,3,20,10000,N'Cuốn',200000)
 
+insert into PhieuThuTien(NgayThu,SoTienThu,IdDaiLy,CMND) values ('2022-06-01',60000,1,'20424100')
+insert into PhieuThuTien(NgayThu,SoTienThu,IdDaiLy,CMND) values ('2022-05-22',240000,2,'21424087')
 
+insert into CongNo(IdDaiLy,Thang,NoDau,NoCuoi,PhatSinh) values (1,6,0,0,0)
+insert into CongNo(IdDaiLy,Thang,NoDau,NoCuoi,PhatSinh) values (2,5,0,0,0)
 
-insert into PhieuThuTien(NgayThu,SoTienThu,IdDaiLy,CMND) values ('2018-7-7',60000,1,'20424100')
-insert into PhieuThuTien(NgayThu,SoTienThu,IdDaiLy,CMND) values ('2018-7-22',240000,2,'21424087')
-insert into PhieuThuTien(NgayThu,SoTienThu,IdDaiLy,CMND) values ('2018-8-8',50000,3,'21424040')
-insert into PhieuThuTien (NgayThu,SoTienThu,IdDaiLy,CMND) values ('2018-08-19',30000,3,'20424100')
-insert into PhieuThuTien (NgayThu,SoTienThu,IdDaiLy,CMND) values ('2018-08-10',20000,4,'21424041')
-
-insert into CongNo(IdDaiLy,Thang,NoDau,NoCuoi,PhatSinh) values (1,7,0,0,0)
-insert into CongNo(IdDaiLy,Thang,NoDau,NoCuoi,PhatSinh) values (2,7,0,0,0)
-insert into CongNo(IdDaiLy,Thang,NoDau,NoCuoi,PhatSinh) values (3,8,0,0,0)
-
-insert into DoanhSo(IdDaiLy,Thang,TongDoanhSo,SoPhieuXuat,TyLe) values (1,7,60000,1,33)
-insert into DoanhSo(IdDaiLy,Thang,TongDoanhSo,SoPhieuXuat,TyLe) values (2,7,240000,1,33)
-insert into DoanhSo(IdDaiLy,Thang,TongDoanhSo,SoPhieuXuat,TyLe) values (3,8,50000,1,33)
+insert into DoanhSo(IdDaiLy,Thang,TongDoanhSo,SoPhieuXuat,TyLe) values (1, 6, 60000, 1, 33)
+insert into DoanhSo(IdDaiLy,Thang,TongDoanhSo,SoPhieuXuat,TyLe) values (2, 5, 240000, 1, 33)
 -----CÁC QUY ĐỊNH ---------------------
-insert into QuyDinhTienNo values (1,50000)
-insert into QuyDinhTienNo values (2,50000)
+insert into QuyDinhTienNo values (1, 20000)
+insert into QuyDinhTienNo values (2, 50000)
 
 insert into QuyDinhMatHang values (1,N'Quyển',3000)
 insert into QuyDinhMatHang values (2,N'Cây',2500)

@@ -35,7 +35,7 @@ namespace QuanLyDaiLy
             Load();
         }
 
-        private void Load()
+        private new void Load()
         {
       
             txtDonGia.Modified = false;

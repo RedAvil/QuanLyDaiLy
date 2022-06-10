@@ -33,7 +33,7 @@ namespace QuanLyDaiLy
             this.nhanVien = nv;
             Load();
         }
-        private void Load()
+        private new void Load()
         {
             tb = new DataTable();
             tb.Columns.Add("id", typeof(int));
@@ -81,7 +81,7 @@ namespace QuanLyDaiLy
                 {
                     MessageBox.Show("Thêm thất bại");
                 }
-
+                txtTen.Text = "";
             }
         }
 
@@ -92,14 +92,15 @@ namespace QuanLyDaiLy
                 int kq = BUS_LoaiDL.XoaLoaiDL(id);
                 if (kq == 1)
                 {
-                    MessageBox.Show("Thêm thành công");
+                    MessageBox.Show("Xóa thành công");
                     dsLoaiDL = BUS_LoaiDL.DsLoaiDL();
                     updateGV();
                 }
                 else
                 {
-                    MessageBox.Show("Thêm thất bại");
+                    MessageBox.Show("Xóa thất bại");
                 }
+                txtTen.Text = "";
             }
         }
 

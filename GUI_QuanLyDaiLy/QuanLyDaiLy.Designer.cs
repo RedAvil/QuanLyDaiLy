@@ -40,29 +40,29 @@
             this.btnThem = new DevExpress.XtraEditors.SimpleButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.cbLoaiDL = new System.Windows.Forms.ComboBox();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dtNgayNhan = new System.Windows.Forms.DateTimePicker();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtTienNo = new DevExpress.XtraEditors.TextEdit();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.txtNguoiNhan = new DevExpress.XtraEditors.TextEdit();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.cbQuan = new System.Windows.Forms.ComboBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtSdt = new DevExpress.XtraEditors.TextEdit();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.txtDiaChi = new DevExpress.XtraEditors.TextEdit();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txtTenDaiLy = new DevExpress.XtraEditors.TextEdit();
-            this.dtNgayNhan = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.txtTenDaiLy = new DevExpress.XtraEditors.TextEdit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvDaiLy)).BeginInit();
             this.panel11.SuspendLayout();
@@ -118,7 +118,7 @@
             // btnReMove
             // 
             this.btnReMove.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnReMove.Appearance.Font")));
-            this.btnReMove.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("btnReMove.Appearance.ForeColor")));
+            this.btnReMove.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnReMove.Appearance.Options.UseFont = true;
             this.btnReMove.Appearance.Options.UseForeColor = true;
             this.btnReMove.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnReMove.ImageOptions.Image")));
@@ -147,7 +147,7 @@
             // btnSua
             // 
             this.btnSua.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnSua.Appearance.Font")));
-            this.btnSua.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("btnSua.Appearance.ForeColor")));
+            this.btnSua.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnSua.Appearance.Options.UseFont = true;
             this.btnSua.Appearance.Options.UseForeColor = true;
             this.btnSua.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.ImageOptions.Image")));
@@ -158,7 +158,7 @@
             // btnXoa
             // 
             this.btnXoa.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnXoa.Appearance.Font")));
-            this.btnXoa.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("btnXoa.Appearance.ForeColor")));
+            this.btnXoa.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnXoa.Appearance.Options.UseFont = true;
             this.btnXoa.Appearance.Options.UseForeColor = true;
             this.btnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.ImageOptions.Image")));
@@ -169,7 +169,7 @@
             // btnThem
             // 
             this.btnThem.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnThem.Appearance.Font")));
-            this.btnThem.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("btnThem.Appearance.ForeColor")));
+            this.btnThem.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnThem.Appearance.Options.UseFont = true;
             this.btnThem.Appearance.Options.UseForeColor = true;
             this.btnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.ImageOptions.Image")));
@@ -201,6 +201,11 @@
             this.panel5.Name = "panel5";
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
             // cbLoaiDL
             // 
             resources.ApplyResources(this.cbLoaiDL, "cbLoaiDL");
@@ -216,6 +221,19 @@
             this.panel9.Name = "panel9";
             this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // dtNgayNhan
+            // 
+            resources.ApplyResources(this.dtNgayNhan, "dtNgayNhan");
+            this.dtNgayNhan.MaxDate = new System.DateTime(2030, 12, 31, 0, 0, 0, 0);
+            this.dtNgayNhan.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.dtNgayNhan.Name = "dtNgayNhan";
+            this.dtNgayNhan.Value = new System.DateTime(2022, 6, 4, 0, 0, 0, 0);
+            // 
             // panel10
             // 
             this.panel10.Controls.Add(this.label4);
@@ -223,6 +241,11 @@
             resources.ApplyResources(this.panel10, "panel10");
             this.panel10.Name = "panel10";
             this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
             // 
             // txtTienNo
             // 
@@ -240,6 +263,11 @@
             this.panel7.Name = "panel7";
             this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
             // txtNguoiNhan
             // 
             resources.ApplyResources(this.txtNguoiNhan, "txtNguoiNhan");
@@ -256,6 +284,11 @@
             this.panel8.Name = "panel8";
             this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
             // cbQuan
             // 
             resources.ApplyResources(this.cbQuan, "cbQuan");
@@ -270,6 +303,11 @@
             resources.ApplyResources(this.panel6, "panel6");
             this.panel6.Name = "panel6";
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
             // 
             // txtSdt
             // 
@@ -287,6 +325,11 @@
             this.panel4.Name = "panel4";
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
             // txtDiaChi
             // 
             resources.ApplyResources(this.txtDiaChi, "txtDiaChi");
@@ -303,6 +346,11 @@
             this.panel3.Name = "panel3";
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
             // txtTenDaiLy
             // 
             resources.ApplyResources(this.txtTenDaiLy, "txtTenDaiLy");
@@ -310,51 +358,6 @@
             this.txtTenDaiLy.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txtTenDaiLy.Properties.Appearance.Font")));
             this.txtTenDaiLy.Properties.Appearance.Options.UseFont = true;
             this.txtTenDaiLy.EditValueChanged += new System.EventHandler(this.txtTenDaiLy_EditValueChanged);
-            // 
-            // dtNgayNhan
-            // 
-            resources.ApplyResources(this.dtNgayNhan, "dtNgayNhan");
-            this.dtNgayNhan.Name = "dtNgayNhan";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
-            // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
             // 
             // QuanLyDaiLy
             // 
@@ -405,8 +408,6 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.ComboBox cbQuan;
-        private System.Windows.Forms.Panel panel7;
-        private DevExpress.XtraEditors.TextEdit txtNguoiNhan;
         private System.Windows.Forms.Panel panel6;
         private DevExpress.XtraEditors.TextEdit txtSdt;
         private System.Windows.Forms.Panel panel4;
@@ -426,10 +427,12 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dtNgayNhan;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label label8;
+        private DevExpress.XtraEditors.TextEdit txtNguoiNhan;
     }
 }
